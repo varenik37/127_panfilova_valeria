@@ -1,26 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ChangeListManager">
-    <list default="true" id="3a6b66a3-0474-4696-8835-c79c2fa39568" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/junit_junit_4_13_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features.txt" beforeDir="false" afterPath="$PROJECT_DIR$/features.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/task_10/Core/Contract.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/task_10/Tests/ContractsTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/Contract.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tests/ContractsTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task_10.iml" beforeDir="false" afterPath="$PROJECT_DIR$/task_10.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../task_9/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../task_9/.idea/vcs.xml" afterDir="false" />
-    </list>
-    <option name="SHOW_DIALOG" value="false" />
-    <option name="HIGHLIGHT_CONFLICTS" value="true" />
-    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
-    <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-  </component>
   <component name="Palette2">
     <group name="Swing">
       <item class="com.intellij.uiDesigner.HSpacer" tooltip-text="Horizontal Spacer" icon="/com/intellij/uiDesigner/icons/hspacer.png" removable="false" auto-create-binding="false" can-attach-label="false">
@@ -141,66 +120,5 @@
         <default-constraints vsize-policy="6" hsize-policy="0" anchor="0" fill="2" />
       </item>
     </group>
-  </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-  </component>
-  <component name="RunManager" selected="JUnit.PactTest.addPactToList_invalidArgs_throwsException">
-    <configuration name="PactTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="task_10" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="PactTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="PactTests" />
-      <option name="MAIN_CLASS_NAME" value="PactTests.PactTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PactTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="PactTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="PactTests" />
-      <option name="MAIN_CLASS_NAME" value="PactTests.PactTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PactTest.addPactToList_invalidArgs_throwsException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="task_10" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="PactTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="PactTests" />
-      <option name="MAIN_CLASS_NAME" value="PactTests.PactTest" />
-      <option name="METHOD_NAME" value="addPactToList_invalidArgs_throwsException" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.PactTest.addPactToList_invalidArgs_throwsException" />
-        <item itemvalue="JUnit.PactTest (1)" />
-        <item itemvalue="JUnit.PactTest" />
-      </list>
-    </recent_temporary>
-  </component>
-  <component name="TaskManager">
-    <servers />
   </component>
 </project>
