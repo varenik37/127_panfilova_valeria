@@ -6,12 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="046ffdf6-0bb1-4706-9811-9bb144d03430" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/DoubleLinkedList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/DummyNode.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/DynamicArray.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/ListNode.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Node.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DynamicArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/127_Panfilova_task_1/DynamicArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/127_Panfilova_task_1/DynamicArray.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/127_Panfilova_task_1/Task1_Tests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/127_Panfilova_task_1/Task1_Tests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Task1_Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Task1_Tests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +43,16 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.Task1_Tests">
+    <configuration name="Task1_Tests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="127_Panfilova_task_1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Task1_Tests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Task1_Tests.DynamicArray_NegativeSize_Exception" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="127_Panfilova_task_1" />
       <option name="PACKAGE_NAME" value="" />
@@ -58,8 +63,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Task1_Tests.createList_createListWithNothing_ListIsEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="127_Panfilova_task_1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Task1_Tests" />
+      <option name="METHOD_NAME" value="createList_createListWithNothing_ListIsEmpty" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Task1_Tests.pushFront_PushFrontToEmptyList_DataIsPushed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="127_Panfilova_task_1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Task1_Tests" />
+      <option name="METHOD_NAME" value="pushFront_PushFrontToEmptyList_DataIsPushed" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Task1_Tests" />
+        <item itemvalue="JUnit.Task1_Tests.pushFront_PushFrontToEmptyList_DataIsPushed" />
+        <item itemvalue="JUnit.Task1_Tests.createList_createListWithNothing_ListIsEmpty" />
         <item itemvalue="JUnit.Task1_Tests.DynamicArray_NegativeSize_Exception" />
       </list>
     </recent_temporary>
