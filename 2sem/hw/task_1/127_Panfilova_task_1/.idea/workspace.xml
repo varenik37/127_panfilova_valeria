@@ -44,22 +44,12 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
-  <component name="RunManager" selected="JUnit.Task1_Tests">
+  <component name="RunManager" selected="JUnit.Task1_Tests.remove_removeElementFromArray_ValueIsCorrect">
     <configuration name="Task1_Tests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="127_Panfilova_task_1" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Task1_Tests" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Task1_Tests.createArray_createArrayWithNothing_SizeEqualsDefaultSize" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="127_Panfilova_task_1" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Task1_Tests" />
-      <option name="METHOD_NAME" value="createArray_createArrayWithNothing_SizeEqualsDefaultSize" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -74,21 +64,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Task1_Tests.pushBack_PushBackToNotEmptyList_DataIsPushed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Task1_Tests.insertIndex_IndexExist_ValueIsCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="127_Panfilova_task_1" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Task1_Tests" />
-      <option name="METHOD_NAME" value="pushBack_PushBackToNotEmptyList_DataIsPushed" />
+      <option name="METHOD_NAME" value="insertIndex_IndexExist_ValueIsCorrect" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Task1_Tests.pushFront_PushFrontToEmptyList_DataIsPushed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Task1_Tests.pushBack_pushBackElement_ValueIsCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="127_Panfilova_task_1" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Task1_Tests" />
-      <option name="METHOD_NAME" value="pushFront_PushFrontToEmptyList_DataIsPushed" />
+      <option name="METHOD_NAME" value="pushBack_pushBackElement_ValueIsCorrect" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Task1_Tests.remove_removeElementFromArray_ValueIsCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="127_Panfilova_task_1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Task1_Tests" />
+      <option name="METHOD_NAME" value="remove_removeElementFromArray_ValueIsCorrect" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -96,11 +96,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Task1_Tests.remove_removeElementFromArray_ValueIsCorrect" />
+        <item itemvalue="JUnit.Task1_Tests.insertIndex_IndexExist_ValueIsCorrect" />
+        <item itemvalue="JUnit.Task1_Tests.pushBack_pushBackElement_ValueIsCorrect" />
         <item itemvalue="JUnit.Task1_Tests" />
         <item itemvalue="JUnit.Task1_Tests.createArray_createArray_SizeEqualsDefaultSize" />
-        <item itemvalue="JUnit.Task1_Tests.createArray_createArrayWithNothing_SizeEqualsDefaultSize" />
-        <item itemvalue="JUnit.Task1_Tests.pushBack_PushBackToNotEmptyList_DataIsPushed" />
-        <item itemvalue="JUnit.Task1_Tests.pushFront_PushFrontToEmptyList_DataIsPushed" />
       </list>
     </recent_temporary>
   </component>

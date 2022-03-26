@@ -98,5 +98,23 @@ public class Task1_Tests extends Assert {
 
     }
 
-    
+    @Test
+    public void remove_removeElementFromArray_ValueIsCorrect() {
+        DynamicArray<Integer> array = new DynamicArray<>(3);
+        array.set(0, 1);
+        array.set(1, 2);
+        array.remove(2);
+        assertEquals(2, array.get(1).intValue());
+    }
+
+    @Test
+    public void remove_removeElementNotExist_IndexOutOfBounds() {
+        DynamicArray<Integer> array = new DynamicArray<>(3);
+        try {
+            array.remove(3);
+            fail();
+        } catch (IndexOutOfBoundsException e) {
+            assertTrue(true);
+        }
+    }
 }
