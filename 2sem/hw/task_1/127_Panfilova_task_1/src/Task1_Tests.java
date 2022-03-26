@@ -42,13 +42,13 @@ public class Task1_Tests extends Assert {
     }
 
     @Test
-    public void createNode_CreateNodeWithDataOnly_NextEqualsNull() {
+    public void createNode_CreateNodeWithData_NextEqualsNull() {
         Node<Integer> node = new Node <>(34);
         assertNull(node.getNext());
     }
 
     @Test
-    public void createNode_CreateNodeWithDataOnly_PrevEqualsNull() {
+    public void createNode_CreateNodeWithData_PrevEqualsNull() {
         Node<Integer> node = new Node <>(34);
         assertNull(node.getPrev());
     }
@@ -88,6 +88,17 @@ public class Task1_Tests extends Assert {
     }
 
     @Test
+    public void set_setIndexNotExist_IndexOutOfBounds() {
+        DynamicArray<Integer> array = new DynamicArray<>(3);
+        try {
+            array.set(3, DynamicArray.DefaultSize);
+            fail();
+        } catch (IndexOutOfBoundsException e) {
+            assertEquals("Index out of bounds", e.getMessage());
+        }
+    }
+
+    @Test
     public void insertIndex_IndexIsNotExist_IndexOutOfBounds() {
         DynamicArray<Integer> array = new DynamicArray<>(2);
         try {
@@ -96,6 +107,14 @@ public class Task1_Tests extends Assert {
             assertEquals("Index out of bounds", e.getMessage());
         }
 
+    }
+
+    @Test
+    public void insert_InsertIndexInNotExistingSlot_ValueIsCorrect() {
+        DynamicArray<Integer> array = new DynamicArray<>(3);
+        array.set(0, 1);
+        array.insert(0, 2);
+        assertTrue(2 == array.get(0));
     }
 
     @Test
@@ -114,6 +133,26 @@ public class Task1_Tests extends Assert {
             array.remove(3);
             fail();
         } catch (IndexOutOfBoundsException e) {
+            assertTrue(true);
+        }
+    }
+
+    @Test
+    public void pushBack_pushBackElement_ValueIsCorrect() {
+        DynamicArray<Integer> array = new DynamicArray<>(3);
+        array.set(0, 1);
+        array.set(1, 2);
+        array.pushBack(1);
+        assertTrue(1 == array.get(3).intValue());
+    }
+
+    @Test
+    public void popBack_popBackElementIsZero_ArrayIsEmpty() {
+        try {
+            DynamicArray<Integer> array = new DynamicArray<>(0);
+            array.popBack();
+            fail();
+        } catch (UnsupportedOperationException e) {
             assertTrue(true);
         }
     }
