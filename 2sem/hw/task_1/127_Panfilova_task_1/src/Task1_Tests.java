@@ -114,7 +114,7 @@ public class Task1_Tests extends Assert {
         DynamicArray<Integer> array = new DynamicArray<>(3);
         array.set(0, 1);
         array.insert(0, 2);
-        assertTrue(2 == array.get(0));
+        assertEquals(2, (int) array.get(0));
     }
 
     @Test
@@ -143,7 +143,7 @@ public class Task1_Tests extends Assert {
         array.set(0, 1);
         array.set(1, 2);
         array.pushBack(1);
-        assertTrue(1 == array.get(3).intValue());
+        assertEquals(1, (int) array.get(3));
     }
 
     @Test
@@ -155,5 +155,14 @@ public class Task1_Tests extends Assert {
         } catch (UnsupportedOperationException e) {
             assertTrue(true);
         }
+    }
+
+    @Test
+    public void popBack_popBackElement_ValueIsCorrect() {
+        DynamicArray<Integer> array = new DynamicArray<>(3);
+        array.set(0, 1);
+        array.set(1, 2);
+        array.popBack();
+        assertEquals(1, array.getSize());
     }
 }
