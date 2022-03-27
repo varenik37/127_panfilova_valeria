@@ -10,18 +10,43 @@ public class Task2_Tests extends Assert {
     }
 
     @Test
-    public void bubbleSort_DataIsUnsorted_SortIsCorrect() {
+    public void bubbleSort_dataIsUnsorted_sortIsCorrect() {
         Integer[] data = {3, 5, 2, 1};
-        BubbleSort<Integer> bsort = new BubbleSort<>();
-        bsort.sort(data, new TestComparator());
+        BubbleSort<Integer> bSort = new BubbleSort<>();
+        bSort.sort(data, new TestComparator());
         assertArrayEquals(new Integer[]{1, 2, 3, 5}, data);
     }
 
     @Test
-    public void bubbleSort_DataIsEqual_SortIsNotNeeded() {
+    public void bubbleSort_dataIsEqual_sortIsNotNeeded() {
         Integer[] data = {3, 3, 3, 3};
-        BubbleSort<Integer> bsort = new BubbleSort<>();
-        bsort.sort(data, new TestComparator());
+        BubbleSort<Integer> bSort = new BubbleSort<>();
+        bSort.sort(data, new TestComparator());
         assertArrayEquals(new Integer[]{3, 3, 3, 3}, data);
     }
+
+    @Test
+    public void bubbleSort_dataIsSorted_sortIsNotNeeded() {
+        Integer[] data = {1, 2, 3, 5};
+        BubbleSort<Integer> bSort = new BubbleSort<>();
+        bSort.sort(data, new TestComparator());
+        assertArrayEquals(new Integer[]{1, 2, 3, 5}, data);
+    }
+
+    @Test
+    public void insertionSort_dataIsEqual_sortIsNotNeeded() {
+        Integer[] data = {3, 3, 3, 3};
+        InsertionSort<Integer> iSort = new InsertionSort<>();
+        iSort.sort(data, new TestComparator());
+        assertArrayEquals(new Integer[]{3, 3, 3, 3}, data);
+    }
+
+    @Test
+    public void insertSort_dataIsUnsorted_sortIsCorrect() {
+        Integer[] data = {3, 5, 2, 1};
+        InsertionSort<Integer> iSort = new InsertionSort<>();
+        iSort.sort(data, new TestComparator());
+        assertArrayEquals(new Integer[]{1, 2, 3, 5}, data);
+    }
+
 }
