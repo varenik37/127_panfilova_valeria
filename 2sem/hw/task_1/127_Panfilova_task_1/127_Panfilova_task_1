@@ -3,6 +3,9 @@ DoubleLinkedList|17|return dummy.getPrev(); -> return dummy.getNext();|pushFront
 DoubleLinkedList|20|return dummy.getNext(); -> return dummy.getPrev();|pushFront_PushFrontToNotEmptyList_DataIsPushed
 DoubleLinkedList|33|--size; -> ++size;|pushBack_PushBackToEmptyList_DataIsPushed
 
+Node|13|this.next = prev; -> this.next = next;|pushFront_PushFrontToNotEmptyList_DataIsPushed
+Node|14|this.prev = next; -> this.prev = next;|pushFront_PushFrontToNotEmptyList_DataIsPushed
+
 DynamicArray|11|size = 1; -> size = 0;|getSize_getSizeOfNewArray_SizeEqualsDefaultSize
 DynamicArray|15|data = new Object[capacity] -> data = new Object[size]|setValue_setNewValue_ValueIsCorrect
 DynamicArray|21|(newSize > 0); -> (newSize < 0);|resize_SetSizeBiggerThanZero_NewSizeIsCorrect
