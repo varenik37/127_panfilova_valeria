@@ -9,6 +9,13 @@ public class Task1_Tests extends Assert {
     }
 
     @Test
+    public void createList_createNewList_ListIsNotEmpty() {
+        DoubleLinkedList<Integer> list = new DoubleLinkedList<>();
+        list.pushFront(3);
+        assertFalse(list.isEmpty());
+    }
+
+    @Test
     public void pushFront_PushFrontToEmptyList_DataIsPushed() {
         DoubleLinkedList<Integer> list = new DoubleLinkedList<>();
         list.pushFront(0);
@@ -18,17 +25,11 @@ public class Task1_Tests extends Assert {
         assertEquals(0, Tail.getData().intValue());
     }
 
-    private int getIntDataValue(ListNode<Integer> item) {
-        return ((Node<Integer>) item).getData();
-    }
-
     @Test
     public void pushFront_PushFrontToNotEmptyList_DataIsPushed() {
         DoubleLinkedList<Integer> list = new DoubleLinkedList<>();
-        list.pushFront(0);
-        list.pushFront(1);
-        list.pushFront(2);
-        assertEquals(1, getIntDataValue(list.get(1)));
+        list.pushFront(3);
+        assertEquals(1, list.getSize());
     }
 
     @Test
@@ -54,20 +55,6 @@ public class Task1_Tests extends Assert {
     }
 
     @Test
-    public void createArray_createArray_SizeEqualsDefaultSize() {
-        int defaultSize = 1024;
-        DynamicArray<Integer> array = new DynamicArray<>();
-        assertEquals(defaultSize, array.getSize());
-    }
-
-    @Test
-    public void createArray_createArrayWithSize50_SizeEquals50() {
-        int size = 50;
-        DynamicArray<Integer> array = new DynamicArray<>(size);
-        assertEquals(size, array.getSize());
-    }
-
-    @Test
     public void resize_SetSizeBiggerThanZero_NewSizeIsCorrect() {
         DynamicArray<Integer> array = new DynamicArray<>(1);
         array.resize(2);
@@ -82,16 +69,27 @@ public class Task1_Tests extends Assert {
 
     @Test
     public void setValue_setNewValue_ValueIsCorrect() {
-        DynamicArray<Integer> array = new DynamicArray<>();
+        DynamicArray<Integer> array = new DynamicArray<>(3);
         array.set(0, 1);
         assertEquals(1, array.get(0).intValue());
     }
 
     @Test
-    public void set_setIndexNotExist_IndexOutOfBounds() {
+    public void set_setIndexEqualsSize_IndexOutOfBounds() {
         DynamicArray<Integer> array = new DynamicArray<>(3);
         try {
             array.set(3, DynamicArray.DefaultSize);
+            fail();
+        } catch (IndexOutOfBoundsException e) {
+            assertEquals("Index out of bounds", e.getMessage());
+        }
+    }
+
+    @Test
+    public void get_getIndexEqualsSize_IndexOutOfBounds() {
+        DynamicArray<Integer> array = new DynamicArray<>(3);
+        try {
+            array.get(3);
             fail();
         } catch (IndexOutOfBoundsException e) {
             assertEquals("Index out of bounds", e.getMessage());
@@ -162,7 +160,10 @@ public class Task1_Tests extends Assert {
         DynamicArray<Integer> array = new DynamicArray<>(3);
         array.set(0, 1);
         array.set(1, 2);
+        array.set(2, 3);
         array.popBack();
-        assertEquals(1, array.getSize());
+        assertEquals(2, array.getSize());
     }
+
+
 }

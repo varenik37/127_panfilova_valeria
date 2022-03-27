@@ -25,7 +25,6 @@ public class DynamicArray<T> {
             data = Arrays.copyOf(data, newSize);
             size = newSize;
         }
-
     }
     public T get(int index) {
         if(index < 0 || index >= size)
@@ -47,7 +46,7 @@ public class DynamicArray<T> {
         for(int i = size - 1; i >= index; --i)
             data[i + 1] = data[i];
         ++size;
-        data[size] = value;
+        data[index] = value;
     }
     public void pushBack(T value) {
         if(capacity == size) {

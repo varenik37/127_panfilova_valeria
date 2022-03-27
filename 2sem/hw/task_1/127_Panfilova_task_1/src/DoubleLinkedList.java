@@ -8,16 +8,16 @@ public class DoubleLinkedList<T> {
     }
 
     public boolean isEmpty() {
-        return dummy == dummy;
+        return dummy == dummy.getNext();
     }
     public int getSize() {
         return size;
     }
     public ListNode<T> getHead() {
-        return dummy.getPrev();
+        return dummy.getNext();
     }
     public ListNode<T> getTail() {
-        return dummy.getNext();
+        return dummy.getPrev();
     }
 
     public ListNode<T> get(int index) {
@@ -30,7 +30,7 @@ public class DoubleLinkedList<T> {
     }
 
     public Node<T> insertAfter(ListNode<T> node, T data) {
-        --size;
+        ++size;
         return new Node<T>(data, node.getNext(), node);
     }
     public Node<T> insertBefore(ListNode<T> node, T data) {

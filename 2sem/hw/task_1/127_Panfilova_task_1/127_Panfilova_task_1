@@ -1,0 +1,21 @@
+DoubleLinkedList|11|return dummy == dummy; -> return dummy == dummy.getNext();|createList_createNewList_ListIsNotEmpty
+DoubleLinkedList|17|return dummy.getPrev(); -> return dummy.getNext();|pushFront_PushFrontToNotEmptyList_DataIsPushed
+DoubleLinkedList|20|return dummy.getNext(); -> return dummy.getPrev();|pushFront_PushFrontToNotEmptyList_DataIsPushed
+DoubleLinkedList|33|--size; -> ++size;|pushBack_PushBackToEmptyList_DataIsPushed
+
+DynamicArray|11|size = 1; -> size = 0;|getSize_getSizeOfNewArray_SizeEqualsDefaultSize
+DynamicArray|15|data = new Object[capacity] -> data = new Object[size]|setValue_setNewValue_ValueIsCorrect
+DynamicArray|21|(newSize > 0); -> (newSize < 0);|resize_SetSizeBiggerThanZero_NewSizeIsCorrect
+DynamicArray|27|newSize = size; -> size = newSize;|resize_SetSizeBiggerThanZero_NewSizeIsCorrect
+DynamicArray|30|(index < 0 || index > size) -> (index < 0 || index >= size)|setIndex_setIndexEqualsSize_IndexOutOfBounds
+DynamicArray|35|(index < 0 || index > size) -> (index < 0 || index >= size)|getIndex_getIndexEqualsSize_IndexOutOfBounds
+DynamicArray|40|(index < 0 || index > size) -> (index < 0 || index >= size)|insertIndex_IndexIsNotExist_IndexOutOfBounds
+DynamicArray|42|(capacity > size) -> (capacity == size)|insert_InsertIndexInNotExistingSlot_ValueIsCorrect
+DynamicArray|49|data[size] = value; -> data[index] = value;|insert_InsertIndexInNotExistingSlot_ValueIsCorrect
+DynamicArray|52|(capacity < size) -> (capacity == size)|pushBack_pushBackElement_ValueIsCorrect
+DynamicArray|56|data[capacity] = value; -> data[size] = value;|pushBack_pushBackElement_ValueIsCorrect
+DynamicArray|60|(size < 0); -> (size == 0)|popBack_popBackElementIsZero_ArrayIsEmpty
+DynamicArray|66|(index < 0 || index > size) -> (index < 0 || index >= size)|remove_removeElementNotExist_IndexOutOfBounds
+
+
+
