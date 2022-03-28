@@ -7,6 +7,7 @@ InsertionSort|8|++cur; -> --cur;|insertSort_dataIsUnsorted_sortIsCorrect
 
 SelectionSort|4|int sortedSize = 1; -> int sortedSize = 0;|selectionSort_twoUnsortedNumbers_sortIsCorrect
 SelectionSort|5|int maxInd = 1; -> int maxInd = 0;|selectionSort_invertedData_sortIsCorrect
+SelectionSort|8|maxInd = sortedSize; -> maxInd = i;|selectionSort_dataIsUnsorted_sortIsCorrect
 SelectionSort|10|tmp = data[data.length - sortedSize]; -> tmp = data[data.length - 1 - sortedSize];|selectionSort_twoUnsortedNumbers_sortIsCorrect
 SelectionSort|11|data[data.length - sortedSize] = data[maxInd]; -> data[data.length - 1 - sortedSize] = data[maxInd];|selectionSort_twoUnsortedNumbers_sortIsCorrect
 
