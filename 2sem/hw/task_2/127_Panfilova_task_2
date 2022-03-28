@@ -5,3 +5,9 @@ BubbleSort|6|data[i] < 0 -> data[i] > 0|bubbleSort_dataIsSorted_sortIsNotNeeded
 InsertionSort|6|((cur > 0 && comparator.compare(data[cur - 1], data[cur]) <= 0) -> ((cur > 0 && comparator.compare(data[cur - 1], data[cur]) > 0)|insertionSort_dataIsEqual_sortIsNotNeeded
 InsertionSort|8|++cur; -> --cur;|insertSort_dataIsUnsorted_sortIsCorrect
 
+SelectionSort|4|int sortedSize = 1; -> int sortedSize = 0;|selectionSort_twoUnsortedNumbers_sortIsCorrect
+SelectionSort|5|int maxInd = 1; -> int maxInd = 0;|selectionSort_invertedData_sortIsCorrect
+SelectionSort|10|tmp = data[data.length - sortedSize]; -> tmp = data[data.length - 1 - sortedSize];|selectionSort_twoUnsortedNumbers_sortIsCorrect
+SelectionSort|11|data[data.length - sortedSize] = data[maxInd]; -> data[data.length - 1 - sortedSize] = data[maxInd];|selectionSort_twoUnsortedNumbers_sortIsCorrect
+
+

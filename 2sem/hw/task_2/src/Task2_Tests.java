@@ -49,4 +49,22 @@ public class Task2_Tests extends Assert {
         assertArrayEquals(new Integer[]{1, 2, 3, 5}, data);
     }
 
+    @Test
+    public void selectionSort_twoUnsortedNumbers_sortIsCorrect() {
+        Integer[] data = {5, 1};
+        SelectionSort<Integer> sSort = new SelectionSort<>();
+        sSort.sort(data, new TestComparator());
+        assertArrayEquals(new Integer[]{1, 5}, data);
+    }
+
+    @Test
+    public void selectionSort_invertedData_sortIsCorrect() {
+        Integer[] data = {3, 2};
+        SelectionSort<Integer> sSort = new SelectionSort<>();
+        sSort.sort(data, new TestComparator());
+        assertArrayEquals(new Integer[]{2,3}, data);
+    }
+
+
+
 }
