@@ -1,0 +1,8 @@
+#QuickSort - после 12 вылезает ошибка в 24, после исправления все тесты работают
+QuickSort|12|int base = split(data, e, b); -> int base = split(data, b, e);|quickSort_twoUnsortedNumbers_sortIsCorrect
+QuickSort|13|qSortRec(data, b, base - 2); -> qSortRec(data, b, base - 1);|quickSort_twoUnsortedNumbers_sortIsCorrect
+QuickSort|14|qSortRec(data, base + 2, e); -> qSortRec(data, base + 1, e);|quickSort_twoUnsortedNumbers_sortIsCorrect
+QuickSort|24|swap(data, left, baseElem); -> swap(data, left - 1, baseElem);|quickSort_twoUnsortedNumbers_sortIsCorrect
+QuickSort|25|baseElem = left; -> baseElem = left - 1;|quickSort_dataWithRepeatingNumbers_sortIsCorrect
+QuickSort|29|swap(data, left + 1, right); -> swap(data, left, right);|quickSort_dataWithRepeatingNumbers_sortIsCorrect
+
