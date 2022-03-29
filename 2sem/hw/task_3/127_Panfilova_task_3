@@ -1,8 +1,16 @@
-#QuickSort - после 12 вылезает ошибка в 24, после исправления все тесты работают
+#QuickSort - после исправления 12 вылезает ошибка в 24, после исправления все тесты работают
 QuickSort|12|int base = split(data, e, b); -> int base = split(data, b, e);|quickSort_twoUnsortedNumbers_sortIsCorrect
 QuickSort|13|qSortRec(data, b, base - 2); -> qSortRec(data, b, base - 1);|quickSort_twoUnsortedNumbers_sortIsCorrect
 QuickSort|14|qSortRec(data, base + 2, e); -> qSortRec(data, base + 1, e);|quickSort_twoUnsortedNumbers_sortIsCorrect
 QuickSort|24|swap(data, left, baseElem); -> swap(data, left - 1, baseElem);|quickSort_twoUnsortedNumbers_sortIsCorrect
 QuickSort|25|baseElem = left; -> baseElem = left - 1;|quickSort_dataWithRepeatingNumbers_sortIsCorrect
 QuickSort|29|swap(data, left + 1, right); -> swap(data, left, right);|quickSort_dataWithRepeatingNumbers_sortIsCorrect
+
+#MergeSort - ошибки в 19 и 35 необходимо исправить в самом начале
+MergeSort|17|mergeSortRec(sorting, buffer, begin, middle); -> mergeSortRec(buffer, sorting, begin, middle);|mergeSort_dataWithFirstUnsortedNumber_sortIsCorrect
+MergeSort|18|mergeSortRec(sorting, buffer, middle + 1, end); -> mergeSortRec(buffer, sorting,  middle + 1, end);|mergeSort_dataWithManyNumbers_sortIsCorrect
+MergeSort|19|merge(buffer, sorting, begin, middle - begin, end - middle); -> merge(buffer, sorting, begin, middle - begin + 1, end - middle);|mergeSort_twoUnsortedNumbers_sortIsCorrect
+MergeSort|32|to[resPos] = from[secondFocus++]; -> to[resPos++] = from[secondFocus++];|mergeSort_evenData_sortIsCorrect
+MergeSort|34|to[resPos++] = from[firstFocus]; -> to[resPos++] = from[firstFocus++];|mergeSort_invertedData_sortIsCorrect
+MergeSort|35|else if (comparator.compare(from[firstFocus], from[secondFocus]) > 0) -> else if (comparator.compare(from[firstFocus], from[secondFocus]) < 0)|mergeSort_twoUnsortedNumbers_sortIsCorrect
 
