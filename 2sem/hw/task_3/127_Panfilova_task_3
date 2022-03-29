@@ -14,3 +14,8 @@ MergeSort|32|to[resPos] = from[secondFocus++]; -> to[resPos++] = from[secondFocu
 MergeSort|34|to[resPos++] = from[firstFocus]; -> to[resPos++] = from[firstFocus++];|mergeSort_invertedData_sortIsCorrect
 MergeSort|35|else if (comparator.compare(from[firstFocus], from[secondFocus]) > 0) -> else if (comparator.compare(from[firstFocus], from[secondFocus]) < 0)|mergeSort_twoUnsortedNumbers_sortIsCorrect
 
+HeapSort|10|swap(0, data.length - sortedSize); -> swap(0, data.length - sortedSize - 1);|heapSort_dataIsEqual_sortIsCorrect
+HeapSort|17|for (int i = start; i >= 1; --i) -> for (int i = start; i >= 0; --i)|heapSort_twoSortedNumbers_sortIsCorrect
+HeapSort|18|siftDown(i, 2 * i, 2 * i + 1, data.length); -> siftDown(i, 2 * i + 1, 2 * i + 2, data.length);|heapSort_threeSortedNumbers_sortIsCorrect
+HeapSort|34|siftDown(left, 2 * left, 2 * left + 1, size); -> siftDown(left, 2 * left + 1, 2 * left + 2, size);|heapSort_dataWithRepeatingNumbers_sortIsCorrect
+HeapSort|38|siftDown(right, 2 * right + 1, 2 * right + 2, data.length); -> siftDown(right, 2 * right + 1, 2 * right + 2, size);|heapSort_dataWithManyNumbers_sortIsCorrect
