@@ -71,4 +71,44 @@ public class Task3_Tests extends Assert {
         mSort.sort(data, new TestComparator());
         assertArrayEquals(new Integer[]{1, 2, 3, 5}, data);
     }
+
+    @Test
+    public void heapSort_dataIsEqual_sortIsCorrect() {
+        Integer[] data = {3, 3, 3, 3};
+        HeapSort<Integer> hSort = new HeapSort<>();
+        hSort.sort(data, new TestComparator());
+        assertArrayEquals(new Integer[]{3, 3, 3, 3}, data);
+    }
+
+    @Test
+    public void heapSort_twoSortedNumbers_sortIsCorrect() {
+        Integer[] data = {1, 5};
+        HeapSort<Integer> hSort = new HeapSort<>();
+        hSort.sort(data, new TestComparator());
+        assertArrayEquals(new Integer[]{1, 5}, data);
+    }
+
+    @Test
+    public void heapSort_threeSortedNumbers_sortIsCorrect() {
+        Integer[] data = {1, 2, 5};
+        HeapSort<Integer> hSort = new HeapSort<>();
+        hSort.sort(data, new TestComparator());
+        assertArrayEquals(new Integer[]{1, 2, 5}, data);
+    }
+
+    @Test
+    public void heapSort_dataWithRepeatingNumbers_sortIsCorrect() {
+        Integer[] data = {1, 5, 3, 2, 2, 5};
+        HeapSort<Integer> hSort = new HeapSort<>();
+        hSort.sort(data, new TestComparator());
+        assertArrayEquals(new Integer[]{1, 2, 2, 3, 5, 5}, data);
+    }
+
+    @Test
+    public void heapSort_dataWithManyNumbers_sortIsCorrect() {
+        Integer[] data = {1, 5, 3, 6, 2, 8, 4, 7, 9, 10};
+        HeapSort<Integer> hSort = new HeapSort<>();
+        hSort.sort(data, new TestComparator());
+        assertArrayEquals(new Integer[]{1, 2, 3, 4 ,5 ,6 ,7 ,8 ,9 ,10}, data);
+    }
 }
