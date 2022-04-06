@@ -164,6 +164,4 @@ public class Task1_Tests extends Assert {
         array.popBack();
         assertEquals(2, array.getSize());
     }
-
-
 }
