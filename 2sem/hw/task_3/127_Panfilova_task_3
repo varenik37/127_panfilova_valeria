@@ -1,21 +1,21 @@
 #QuickSort - после исправления 12 вылезает ошибка в 24, после исправления все тесты работают
-QuickSort|12|int base = split(data, e, b); -> int base = split(data, b, e);|quickSort_twoUnsortedNumbers_sortIsCorrect
-QuickSort|13|qSortRec(data, b, base - 2); -> qSortRec(data, b, base - 1);|quickSort_twoUnsortedNumbers_sortIsCorrect
-QuickSort|14|qSortRec(data, base + 2, e); -> qSortRec(data, base + 1, e);|quickSort_twoUnsortedNumbers_sortIsCorrect
-QuickSort|24|swap(data, left, baseElem); -> swap(data, left - 1, baseElem);|quickSort_twoUnsortedNumbers_sortIsCorrect
-QuickSort|25|baseElem = left; -> baseElem = left - 1;|quickSort_dataWithRepeatingNumbers_sortIsCorrect
-QuickSort|29|swap(data, left + 1, right); -> swap(data, left, right);|quickSort_dataWithRepeatingNumbers_sortIsCorrect
+QuickSort.java|12|int base = split(data, e, b); -> int base = split(data, b, e);|quickSort_twoUnsortedNumbers_sortIsCorrect
+QuickSort.java|13|qSortRec(data, b, base - 2); -> qSortRec(data, b, base - 1);|quickSort_twoUnsortedNumbers_sortIsCorrect
+QuickSort.java|14|qSortRec(data, base + 2, e); -> qSortRec(data, base + 1, e);|quickSort_twoUnsortedNumbers_sortIsCorrect
+QuickSort.java|24|swap(data, left, baseElem); -> swap(data, left - 1, baseElem);|quickSort_twoUnsortedNumbers_sortIsCorrect
+QuickSort.java|25|baseElem = left; -> baseElem = left - 1;|quickSort_dataWithRepeatingNumbers_sortIsCorrect
+QuickSort.java|29|swap(data, left + 1, right); -> swap(data, left, right);|quickSort_dataWithRepeatingNumbers_sortIsCorrect
 
 #MergeSort - ошибки в 19 и 35 необходимо исправить в самом начале
-MergeSort|17|mergeSortRec(sorting, buffer, begin, middle); -> mergeSortRec(buffer, sorting, begin, middle);|mergeSort_dataWithFirstUnsortedNumber_sortIsCorrect
-MergeSort|18|mergeSortRec(sorting, buffer, middle + 1, end); -> mergeSortRec(buffer, sorting,  middle + 1, end);|mergeSort_dataWithManyNumbers_sortIsCorrect
-MergeSort|19|merge(buffer, sorting, begin, middle - begin, end - middle); -> merge(buffer, sorting, begin, middle - begin + 1, end - middle);|mergeSort_twoUnsortedNumbers_sortIsCorrect
-MergeSort|32|to[resPos] = from[secondFocus++]; -> to[resPos++] = from[secondFocus++];|mergeSort_evenData_sortIsCorrect
-MergeSort|34|to[resPos++] = from[firstFocus]; -> to[resPos++] = from[firstFocus++];|mergeSort_invertedData_sortIsCorrect
-MergeSort|35|else if (comparator.compare(from[firstFocus], from[secondFocus]) > 0) -> else if (comparator.compare(from[firstFocus], from[secondFocus]) < 0)|mergeSort_twoUnsortedNumbers_sortIsCorrect
+MergeSort.java|17|mergeSortRec(sorting, buffer, begin, middle); -> mergeSortRec(buffer, sorting, begin, middle);|mergeSort_dataWithFirstUnsortedNumber_sortIsCorrect
+MergeSort.java|18|mergeSortRec(sorting, buffer, middle + 1, end); -> mergeSortRec(buffer, sorting,  middle + 1, end);|mergeSort_dataWithManyNumbers_sortIsCorrect
+MergeSort.java|19|merge(buffer, sorting, begin, middle - begin, end - middle); -> merge(buffer, sorting, begin, middle - begin + 1, end - middle);|mergeSort_twoUnsortedNumbers_sortIsCorrect
+MergeSort.java|32|to[resPos] = from[secondFocus++]; -> to[resPos++] = from[secondFocus++];|mergeSort_evenData_sortIsCorrect
+MergeSort.java|34|to[resPos++] = from[firstFocus]; -> to[resPos++] = from[firstFocus++];|mergeSort_invertedData_sortIsCorrect
+MergeSort.java|35|else if (comparator.compare(from[firstFocus], from[secondFocus]) > 0) -> else if (comparator.compare(from[firstFocus], from[secondFocus]) < 0)|mergeSort_twoUnsortedNumbers_sortIsCorrect
 
-HeapSort|10|swap(0, data.length - sortedSize); -> swap(0, data.length - sortedSize - 1);|heapSort_dataIsEqual_sortIsCorrect
-HeapSort|17|for (int i = start; i >= 1; --i) -> for (int i = start; i >= 0; --i)|heapSort_twoSortedNumbers_sortIsCorrect
-HeapSort|18|siftDown(i, 2 * i, 2 * i + 1, data.length); -> siftDown(i, 2 * i + 1, 2 * i + 2, data.length);|heapSort_threeSortedNumbers_sortIsCorrect
-HeapSort|34|siftDown(left, 2 * left, 2 * left + 1, size); -> siftDown(left, 2 * left + 1, 2 * left + 2, size);|heapSort_dataWithRepeatingNumbers_sortIsCorrect
-HeapSort|38|siftDown(right, 2 * right + 1, 2 * right + 2, data.length); -> siftDown(right, 2 * right + 1, 2 * right + 2, size);|heapSort_dataWithManyNumbers_sortIsCorrect
+HeapSort.java|10|swap(0, data.length - sortedSize); -> swap(0, data.length - sortedSize - 1);|heapSort_dataIsEqual_sortIsCorrect
+HeapSort.java|17|for (int i = start; i >= 1; --i) -> for (int i = start; i >= 0; --i)|heapSort_twoSortedNumbers_sortIsCorrect
+HeapSort.java|18|siftDown(i, 2 * i, 2 * i + 1, data.length); -> siftDown(i, 2 * i + 1, 2 * i + 2, data.length);|heapSort_threeSortedNumbers_sortIsCorrect
+HeapSort.java|34|siftDown(left, 2 * left, 2 * left + 1, size); -> siftDown(left, 2 * left + 1, 2 * left + 2, size);|heapSort_dataWithRepeatingNumbers_sortIsCorrect
+HeapSort.java|38|siftDown(right, 2 * right + 1, 2 * right + 2, data.length); -> siftDown(right, 2 * right + 1, 2 * right + 2, size);|heapSort_dataWithManyNumbers_sortIsCorrect

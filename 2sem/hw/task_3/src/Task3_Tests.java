@@ -66,10 +66,10 @@ public class Task3_Tests extends Assert {
 
     @Test
     public void mergeSort_invertedData_sortIsCorrect() {
-        Integer[] data = {5, 3, 2, 1};
+        Integer[] data = {5, 3, 2};
         MergeSort<Integer> mSort = new MergeSort<>();
         mSort.sort(data, new TestComparator());
-        assertArrayEquals(new Integer[]{1, 2, 3, 5}, data);
+        assertArrayEquals(new Integer[]{2, 3, 5}, data);
     }
 
     @Test
