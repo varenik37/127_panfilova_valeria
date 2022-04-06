@@ -23,8 +23,8 @@ public class DynamicArray<T> {
         if(newSize != capacity) {
             capacity = newSize;
             data = Arrays.copyOf(data, newSize);
-            size = newSize;
         }
+        size = newSize;
     }
     public T get(int index) {
         if(index < 0 || index >= size)

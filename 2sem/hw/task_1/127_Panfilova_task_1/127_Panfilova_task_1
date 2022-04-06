@@ -7,12 +7,12 @@ Node.java|13|this.next = prev; -> this.next = next;|pushFront_PushFrontToNotEmpt
 Node.java|14|this.prev = next; -> this.prev = next;|pushFront_PushFrontToNotEmptyList_DataIsPushed
 
 DynamicArray.java|11|size = 1; -> size = 0;|getSize_getSizeOfNewArray_SizeEqualsDefaultSize
-DynamicArray.java|15|data = new Object[capacity] -> data = new Object[size]|setValue_setNewValue_ValueIsCorrect
 DynamicArray.java|21|if(newSize > 0) -> if(newSize < 0)|resize_SetSizeBiggerThanZero_NewSizeIsCorrect
-DynamicArray.java|26|newSize = size; -> size = newSize;|resize_SetSizeBiggerThanZero_NewSizeIsCorrect
+DynamicArray.java|27|newSize = size; -> size = newSize;|resize_SetSizeBiggerThanZero_NewSizeIsCorrect
 DynamicArray.java|30|if(index < 0 || index > size) -> if(index < 0 || index >= size)|setIndex_setIndexEqualsSize_IndexOutOfBounds
 DynamicArray.java|35|if(index < 0 || index > size) -> if(index < 0 || index >= size)|getIndex_getIndexEqualsSize_IndexOutOfBounds
 DynamicArray.java|40|if(index < 0 || index > size) -> if(index < 0 || index >= size)|insertIndex_IndexIsNotExist_IndexOutOfBounds
+DynamicArray.java|15|data = new Object[capacity] -> data = new Object[size]|setValue_setNewValue_ValueIsCorrect
 DynamicArray.java|42|if(capacity > size) { -> if(capacity == size) {|insert_InsertIndexInNotExistingSlot_ValueIsCorrect
 DynamicArray.java|49|data[size] = value; -> data[index] = value;|insert_InsertIndexInNotExistingSlot_ValueIsCorrect
 DynamicArray.java|52|if(capacity < size) { -> if(capacity == size) {|pushBack_pushBackElement_ValueIsCorrect
