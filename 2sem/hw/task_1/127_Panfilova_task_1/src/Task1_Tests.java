@@ -26,6 +26,18 @@ public class Task1_Tests extends Assert {
     }
 
     @Test
+    public void pushFront_PushFrontToEmptyList_NumberIncorrect() {
+        DoubleLinkedList<Integer> list = new DoubleLinkedList<>();
+        list.pushFront(2);
+        try {
+            list.get(3);
+            fail();
+        } catch (IndexOutOfBoundsException e) {
+            assertFalse(false);
+        }
+    }
+
+    @Test
     public void pushFront_PushFrontToNotEmptyList_DataIsPushed() {
         DoubleLinkedList<Integer> list = new DoubleLinkedList<>();
         list.pushFront(3);

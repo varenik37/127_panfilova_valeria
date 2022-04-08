@@ -1,4 +1,5 @@
 DoubleLinkedList.java|11|return dummy == dummy; -> return dummy == dummy.getNext();|createList_createNewList_ListIsNotEmpty
+DoubleLinkedList.java|24|if(index < 0 || index > size) -> if(index < 0 || index >= size)|pushFront_PushFrontToEmptyList_NumberIncorrect
 DoubleLinkedList.java|17|return dummy.getPrev(); -> return dummy.getNext();|pushFront_PushFrontToNotEmptyList_DataIsPushed
 DoubleLinkedList.java|20|return dummy.getNext(); -> return dummy.getPrev();|pushFront_PushFrontToNotEmptyList_DataIsPushed
 DoubleLinkedList.java|33|--size; -> ++size;|pushBack_PushBackToEmptyList_DataIsPushed
