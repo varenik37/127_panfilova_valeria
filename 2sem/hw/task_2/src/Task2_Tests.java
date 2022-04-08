@@ -11,10 +11,10 @@ public class Task2_Tests extends Assert {
 
     @Test
     public void bubbleSort_dataIsUnsorted_sortIsCorrect() {
-        Integer[] data = {3, 5, 2, 1};
+        Integer[] data = {3, 2, 1};
         BubbleSort<Integer> bSort = new BubbleSort<>();
         bSort.sort(data, new TestComparator());
-        assertArrayEquals(new Integer[]{1, 2, 3, 5}, data);
+        assertArrayEquals(new Integer[]{1, 2, 3}, data);
     }
 
     @Test
@@ -23,14 +23,6 @@ public class Task2_Tests extends Assert {
         BubbleSort<Integer> bSort = new BubbleSort<>();
         bSort.sort(data, new TestComparator());
         assertArrayEquals(new Integer[]{3, 3, 3, 3}, data);
-    }
-
-    @Test
-    public void bubbleSort_dataIsSorted_sortIsNotNeeded() {
-        Integer[] data = {1, 2, 3, 5};
-        BubbleSort<Integer> bSort = new BubbleSort<>();
-        bSort.sort(data, new TestComparator());
-        assertArrayEquals(new Integer[]{1, 2, 3, 5}, data);
     }
 
     @Test
@@ -51,10 +43,10 @@ public class Task2_Tests extends Assert {
 
     @Test
     public void selectionSort_twoUnsortedNumbers_sortIsCorrect() {
-        Integer[] data = {5, 1};
+        Integer[] data = {15, 5};
         SelectionSort<Integer> sSort = new SelectionSort<>();
         sSort.sort(data, new TestComparator());
-        assertArrayEquals(new Integer[]{1, 5}, data);
+        assertArrayEquals(new Integer[]{5, 15}, data);
     }
 
     @Test
@@ -67,10 +59,10 @@ public class Task2_Tests extends Assert {
 
     @Test
     public void selectionSort_dataIsUnsorted_sortIsCorrect() {
-        Integer[] data = {3, 5, 2, 1};
+        Integer[] data = {7, 5, 3, 1};
         SelectionSort<Integer> sSort = new SelectionSort<>();
         sSort.sort(data, new TestComparator());
-        assertArrayEquals(new Integer[]{1, 2, 3, 5}, data);
+        assertArrayEquals(new Integer[]{1, 3, 5, 7}, data);
     }
 
 

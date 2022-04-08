@@ -1,6 +1,6 @@
 BubbleSort.java|5|for(int i = 0; i < data.length - sps; ++i) { -> for(int i = 1; i < data.length - sps; ++i) {|bubbleSort_dataIsEqual_sortIsNotNeeded
 BubbleSort.java|4|for(int sps = 1; sps < data.length - 1; ++sps) { -> for(int sps = 0; sps < data.length - 1; ++sps) {|bubbleSort_dataIsUnsorted_sortIsCorrect
-BubbleSort.java|6|if(comparator.compare(data[i - 1], data[i]) < 0) { -> if(comparator.compare(data[i - 1], data[i]) > 0) {|bubbleSort_dataIsSorted_sortIsNotNeeded
+BubbleSort.java|6|if(comparator.compare(data[i - 1], data[i]) < 0) { -> if(comparator.compare(data[i - 1], data[i]) > 0) {|bubbleSort_dataIsUnsorted_sortIsCorrect
 
 InsertionSort.java|6|while (cur > 0 && comparator.compare(data[cur - 1], data[cur]) <= 0){ -> while (cur > 0 && comparator.compare(data[cur - 1], data[cur]) > 0){|insertionSort_dataIsEqual_sortIsNotNeeded
 InsertionSort.java|8|++cur; -> --cur;|insertSort_dataIsUnsorted_sortIsCorrect
@@ -11,6 +11,3 @@ SelectionSort.java|11|data[data.length - sortedSize] = data[maxInd]; -> data[dat
 SelectionSort.java|4|for(int sortedSize = 1; sortedSize < data.length - 1; ++sortedSize) { -> for(int sortedSize = 0; sortedSize < data.length - 1; ++sortedSize) {|selectionSort_twoUnsortedNumbers_sortIsCorrect
 SelectionSort.java|8|maxInd = sortedSize; -> maxInd = i;|selectionSort_dataIsUnsorted_sortIsCorrect
 SelectionSort.java|5|int maxInd = 1; -> int maxInd = 0;|selectionSort_invertedData_sortIsCorrect
-
-
-
