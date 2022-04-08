@@ -109,6 +109,6 @@ public class Task3_Tests extends Assert {
         Integer[] data = {1, 5, 3, 6, 2, 8, 4, 7, 9, 10};
         HeapSort<Integer> hSort = new HeapSort<>();
         hSort.sort(data, new TestComparator());
-        assertArrayEquals(new Integer[]{1, 2, 3, 4 ,5 ,6 ,7 ,8 ,9 ,10}, data);
+        assertArrayEquals(new Integer[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 11}, data);
     }
 }
