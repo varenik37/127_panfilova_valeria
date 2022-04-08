@@ -18,10 +18,10 @@ public class Task3_Tests extends Assert {
 
     @Test
     public void quickSort_dataWithRepeatingNumbers_sortIsCorrect() {
-        Integer[] data = {1, 5, 3, 2, 5};
+        Integer[] data = {0, 2, 3, 2, 0};
         QuickSort<Integer> qSort = new QuickSort<>();
         qSort.sort(data, new TestComparator());
-        assertArrayEquals(new Integer[]{1, 2, 3, 5, 5}, data);
+        assertArrayEquals(new Integer[]{0, 0, 2, 2, 3}, data);
     }
 
     @Test
@@ -58,7 +58,7 @@ public class Task3_Tests extends Assert {
 
     @Test
     public void mergeSort_evenData_sortIsCorrect() {
-        Integer[] data = {3, 5, 2, 1};
+        Integer[] data = {1, 2, 3, 5};
         MergeSort<Integer> mSort = new MergeSort<>();
         mSort.sort(data, new TestComparator());
         assertArrayEquals(new Integer[]{1, 2, 3, 5}, data);
@@ -98,10 +98,10 @@ public class Task3_Tests extends Assert {
 
     @Test
     public void heapSort_dataWithRepeatingNumbers_sortIsCorrect() {
-        Integer[] data = {1, 5, 3, 2, 2, 5};
+        Integer[] data = {1, 5, 3, 5, 2, 2, 5, 1};
         HeapSort<Integer> hSort = new HeapSort<>();
         hSort.sort(data, new TestComparator());
-        assertArrayEquals(new Integer[]{1, 2, 2, 3, 5, 5}, data);
+        assertArrayEquals(new Integer[]{1, 1, 2, 2, 3, 5, 5, 5}, data);
     }
 
     @Test
