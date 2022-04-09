@@ -1,8 +1,11 @@
 DoubleLinkedList.java|11|return dummy == dummy; -> return dummy == dummy.getNext();|createList_createNewList_ListIsNotEmpty
 DoubleLinkedList.java|24|if(index < 0 || index > size) -> if(index < 0 || index >= size)|pushFront_PushFrontToEmptyList_NumberIncorrect
-DoubleLinkedList.java|17|return dummy.getPrev(); -> return dummy.getNext();|pushFront_PushFrontToNotEmptyList_DataIsPushed
-DoubleLinkedList.java|20|return dummy.getNext(); -> return dummy.getPrev();|pushFront_PushFrontToNotEmptyList_DataIsPushed
-DoubleLinkedList.java|33|--size; -> ++size;|pushBack_PushBackToEmptyList_DataIsPushed
+DoubleLinkedList.java|28|cur = cur.getPrev(); -> cur.getNext();|pushFront_pushFrontData_OneNumberIsCorrect
+DoubleLinkedList.java|33|++size; -> ++size;|pushFront_pushFrontData_OneNumberIsCorrect
+DoubleLinkedList.java|17|return dummy.getPrev(); -> return dummy.getNext();|pushFront_pushFrontData_headIsCorrect
+DoubleLinkedList.java|20|return dummy.getNext(); -> return dummy.getPrev();|pushFront_pushFrontData_tailIsCorrect
+DoubleLinkedList.java|41|return insertBefore(getTail(), data); -> return insertAfter(getTail(), data);|pushFront_pushFrontData_tailIsCorrect
+
 
 Node.java|13|this.next = prev; -> this.next = next;|pushFront_PushFrontToNotEmptyList_DataIsPushed
 Node.java|14|this.prev = next; -> this.prev = next;|pushFront_PushFrontToNotEmptyList_DataIsPushed

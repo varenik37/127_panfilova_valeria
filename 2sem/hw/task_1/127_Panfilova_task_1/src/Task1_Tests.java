@@ -28,13 +28,26 @@ public class Task1_Tests extends Assert {
     @Test
     public void pushFront_PushFrontToEmptyList_NumberIncorrect() {
         DoubleLinkedList<Integer> list = new DoubleLinkedList<>();
-        list.pushFront(2);
+        list.pushFront(1);
         try {
-            list.get(3);
+            list.get(1);
             fail();
         } catch (IndexOutOfBoundsException e) {
-            assertFalse(false);
+            assertTrue(true);
         }
+    }
+
+    @Test
+    public void pushFront_pushFrontData_OneNumberIsCorrect() {
+        DoubleLinkedList<Integer> list = new DoubleLinkedList<>();
+        list.pushFront(1);
+        list.pushFront(2);
+        list.pushFront(3);
+        assertEquals(2, getIntValue(list.get(1)));
+    }
+
+    private int getIntValue(ListNode<Integer> item) {
+        return ((Node<Integer>) item).getData();
     }
 
     @Test
@@ -45,13 +58,21 @@ public class Task1_Tests extends Assert {
     }
 
     @Test
-    public void pushBack_PushBackToEmptyList_DataIsPushed() {
+    public void pushFront_pushFrontData_headIsCorrect() {
         DoubleLinkedList<Integer> list = new DoubleLinkedList<>();
-        list.pushBack(0);
-        Node<Integer> Head = (Node<Integer>) list.getHead();
-        Node<Integer> Tail = (Node<Integer>) list.getTail();
-        assertEquals(0, Head.getData().intValue());
-        assertEquals(0, Tail.getData().intValue());
+        list.pushFront(1);
+        list.pushFront(2);
+        list.pushFront(3);
+        assertEquals(1, getIntValue(list.getHead()));
+    }
+
+    @Test
+    public void pushFront_pushFrontData_tailIsCorrect() {
+        DoubleLinkedList<Integer> list = new DoubleLinkedList<>();
+        list.pushFront(1);
+        list.pushFront(2);
+        list.pushFront(3);
+        assertEquals(3, getIntValue(list.getTail()));
     }
 
     @Test
