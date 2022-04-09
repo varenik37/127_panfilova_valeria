@@ -171,10 +171,19 @@ public class Task1_Tests extends Assert {
 
     @Test
     public void insert_InsertIndexInNotExistingSlot_ValueIsCorrect() {
-        DynamicArray<Integer> array = new DynamicArray<>(3);
-        array.set(0, 1);
-        array.insert(0, 2);
-        assertEquals(2, (int) array.get(0));
+        try {
+            DynamicArray<Integer> array = new DynamicArray<>(10);
+            array.set(0, 1);
+            array.set(1, 2);
+            array.set(2, 3);
+            array.insert(1, 5);
+            assertEquals(1, array.get(0).intValue());
+            assertEquals(5, array.get(1).intValue());
+            assertEquals(2, array.get(2).intValue());
+            assertEquals(3, array.get(3).intValue());
+        } catch (Exception e) {
+            fail();
+        }
     }
 
     @Test
@@ -190,20 +199,27 @@ public class Task1_Tests extends Assert {
     public void remove_removeElementNotExist_IndexOutOfBounds() {
         DynamicArray<Integer> array = new DynamicArray<>(3);
         try {
+            array.set(0, 1);
+            array.set(1, 2);
+            array.set(2, 3);
             array.remove(3);
             fail();
         } catch (IndexOutOfBoundsException e) {
-            assertTrue(true);
+            assertEquals("Index out of bounds", e.getMessage());
         }
     }
 
     @Test
     public void pushBack_pushBackElement_ValueIsCorrect() {
-        DynamicArray<Integer> array = new DynamicArray<>(3);
+        DynamicArray<Integer> array = new DynamicArray<>(10);
         array.set(0, 1);
         array.set(1, 2);
-        array.pushBack(1);
-        assertEquals(1, (int) array.get(3));
+        array.set(2, 3);
+        array.pushBack(5);
+        assertEquals(1, array.get(0).intValue());
+        assertEquals(2, array.get(1).intValue());
+        assertEquals(3, array.get(2).intValue());
+        assertEquals(5, array.get(10).intValue());
     }
 
     @Test
@@ -213,7 +229,7 @@ public class Task1_Tests extends Assert {
             array.popBack();
             fail();
         } catch (UnsupportedOperationException e) {
-            assertTrue(true);
+            assertEquals("Array is empty", e.getMessage());
         }
     }
 

@@ -20,11 +20,11 @@ DynamicArray.java|30|if(index < 0 || index > size) -> if(index < 0 || index >= s
 DynamicArray.java|35|if(index < 0 || index > size) -> if(index < 0 || index >= size)|getIndex_getIndexEqualsSize_IndexOutOfBounds
 DynamicArray.java|40|if(index < 0 || index > size) -> if(index < 0 || index >= size)|insertIndex_IndexIsNotExist_IndexOutOfBounds
 DynamicArray.java|15|data = new Object[capacity]; -> data = new Object[size];|setValue_setNewValue_ValueIsCorrect
-DynamicArray.java|42|if(capacity > size) { -> if(capacity == size) {|insert_InsertIndexInNotExistingSlot_ValueIsCorrect
+DynamicArray.java|42|if(capacity > size) { -> if(capacity <= size) {|insert_InsertIndexInNotExistingSlot_ValueIsCorrect
 DynamicArray.java|49|data[size] = value; -> data[index] = value;|insert_InsertIndexInNotExistingSlot_ValueIsCorrect
-DynamicArray.java|52|if(capacity < size) { -> if(capacity == size) {|pushBack_pushBackElement_ValueIsCorrect
+DynamicArray.java|52|if(capacity < size) { -> if(capacity <= size) {|pushBack_pushBackElement_ValueIsCorrect
 DynamicArray.java|56|data[capacity] = value; -> data[size] = value;|pushBack_pushBackElement_ValueIsCorrect
-DynamicArray.java|60|if(size < 0) -> if(size == 0)|popBack_popBackElementIsZero_ArrayIsEmpty
+DynamicArray.java|60|if(size < 0) -> if(size <= 0)|popBack_popBackElementIsZero_ArrayIsEmpty
 DynamicArray.java|66|if(index < 0 || index > size) -> if(index < 0 || index >= size)|remove_removeElementNotExist_IndexOutOfBounds
 
 
