@@ -10,8 +10,8 @@ DoubleLinkedList.java|47|node.getPrev().setPrev(node.getNext()); -> node.getPrev
 DoubleLinkedList.java|48|node.getNext().setNext(node.getPrev()); -> node.getNext().setPrev(node.getPrev());|deleteNumber_firstNumber_firstNumberIsCorrect
 
 
-Node.java|13|this.next = prev; -> this.next = next;|pushFront_PushFrontToNotEmptyList_DataIsPushed
-Node.java|14|this.prev = next; -> this.prev = next;|pushFront_PushFrontToNotEmptyList_DataIsPushed
+Node.java|13|this.next = prev; -> this.next = next;|pushFront_pushFrontData_tailIsCorrect
+Node.java|14|this.prev = next; -> this.prev = next;|pushFront_pushFrontData_tailIsCorrect
 
 DynamicArray.java|11|size = 1; -> size = DefaultSize;|createArray_arrayWithoutData_sizeEqualsDefault
 DynamicArray.java|21|if(newSize > 0) -> if(newSize < 0)|resize_SetSizeBiggerThanZero_NewSizeIsCorrect
