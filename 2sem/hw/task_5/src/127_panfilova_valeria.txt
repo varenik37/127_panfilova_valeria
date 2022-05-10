@@ -57,44 +57,15 @@ AVL_2
 93 x x
 
 AVL_3
+58 45 77
+45 18 56
+18 17 33
+17 x x
+33 x x
+56 x x
+77 x 99
+99 x x
 
-
-	insert 17
-	insert 45
-	insert 33
-	insert 61
-	insert 18
-	insert 38
-	insert 34
-	insert 2
-	insert 58
-	insert 80
-	insert 78
-	insert 77
-
-	delete 2
-	delete 80
-	delete 38
-
-	insert 99
-	insert 56
-	insert 68
-
-	delete 33
-	delete 34
-
-	insert 19
-	insert 50
-	insert 33
-
-	delete 19
-	delete 78
-	delete 68
-	delete 50
-	delete 61
-
--------------------------------------------------------------------------------Красно-черное дерево
--------------------------------------------------------------------------------
 RB_1. Опишите красно-черное дерево, которое получится после
 выполнения следующих операций над изначально пустым деревом:
 	insert 88
