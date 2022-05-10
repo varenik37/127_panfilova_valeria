@@ -25,77 +25,40 @@ S_2
 62 x x
 
 S_3
+52 37 91
+37 33 51
+33 x x
+51 x x
+91 x 86
+86 x 79
+79 x x
 
-	insert 27
-	insert 62
-	insert 25
-	insert 52
-	insert 92
-	insert 91
-	insert 28
-	insert 37
-	insert 23
-	insert 51
-	insert 20
-	insert 87
-	delete 25
-	delete 20
-	delete 62
-	insert 33
-	insert 86
-	insert 79
-	delete 92
-	delete 87
-	insert 74
-	insert 69
-	delete 23
-	delete 28
-	delete 27
-	delete 69
-	delete 74
+AVL_1
+70 40 89
+40 30 56
+30 x 25
+25 x x
+56 x 49
+49 x x
+89 84 99
+84 74 86
+74 x x
+86 x x
+99 x x
 
--------------------------------------------------------------------------------АВЛ дерево
--------------------------------------------------------------------------------
-AVL_1. Опишите АВЛ дерево, которое получится после выполнения
-следующих операций над изначально пустым деревом:
-	insert 70
-	insert 99
-	insert 30
-	insert 89
-	insert 74
-	insert 40
-	insert 56
-	insert 84
-	insert 86
-	insert 49
-	insert 25
-	insert 30
+AVL_2
+40 17 64
+17 8 22
+8 x x
+22 x x
+64 59 88
+59 x x
+88 x 93
+93 x x
 
-AVL_2. Опишите АВЛ дерево, которое получится после выполнения
-следующих операций над изначально пустым деревом:
-	insert 8
-	insert 88
-	insert 64
-	insert 17
-	insert 75
-	insert 17
-	insert 40
-	insert 93
-	insert 58
-	insert 49
-	insert 22
-	insert 16
-	insert 59
-	insert 36
-	insert 17
-	delete 36
-	delete 16
-	delete 75
-	delete 58
-	delete 49
+AVL_3
 
-AVL_3. Опишите АВЛ дерево, которое получится после выполнения
-следующих операций над изначально пустым деревом:
+
 	insert 17
 	insert 45
 	insert 33
@@ -108,17 +71,22 @@ AVL_3. Опишите АВЛ дерево, которое получится п�
 	insert 80
 	insert 78
 	insert 77
+
 	delete 2
 	delete 80
 	delete 38
+
 	insert 99
 	insert 56
 	insert 68
+
 	delete 33
 	delete 34
+
 	insert 19
 	insert 50
 	insert 33
+
 	delete 19
 	delete 78
 	delete 68
